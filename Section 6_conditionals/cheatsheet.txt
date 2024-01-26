@@ -1,0 +1,102 @@
+Cheat Sheet
+This cheat sheet contains takeaways leading up to section three.
+1. Getting Started
+class: contains all of your code.
+main(): entry point of your app.
+javac <file-name>.java: compiles your code.
+java <file-name>: runs the compiled code.
+
+2. Variables
+Data types
+There are 6 main data types.
+
+    data type           value
+    int                 whole numbers
+    long                Very large whole numbers
+    double              Decimals
+    String              Text
+    char                A single character
+    boolean             true or false
+
+long can store very big numbers. But, int is faster and takes less memory.
+
+int         4 bytes
+long        8 bytes
+
+Math Operators
++ =  plus
+- = Minus
+* = Multiply
+/ = Division (not an integer division)
+% = Modulus - returns remainder after division
+++ = Increment by one
+-- = Decrement by one
++= Add by
+-= Subtract by
+
+Put math operations in brackets if you wish to embed them inside a String.
+Example: "5 + 2 is " + (5 + 2);
+
+3. Booleans and Conditionals
+Comparison Operators
+
+Comparison          name
+>                   greater than
+<                   smaller than
+>=                  greater than equal to
+<=                  smaller than equal to
+==                  equal to
+!=                  not equal to
+equals              equal to (string)
+!equals            not equal to (string)
+
+Put comparison operations in brackets if you wish to embed them inside a String.
+Example: "Five is not smaller than one. I'm certain this is " + (5 < 1);
+
+Rules of thumb
+When controlling how your code runs:
+use switch to compare one value against a list of values.
+in any other scenario, use if-else.
+
+Do not confuse = with ==
+use = to set a value equal to another.
+use == to compare two values and return a boolean.
+
+Scanner
+
+Method          Skips delimiter?        returns
+nextLine()      no                      the nextLine
+nextInt()       yes                     the next int
+nextDouble()    yes                     the next double
+nextLong()      yes                     the next long
+next()          yes                     the next string
+
+
+
+The default delimiter is white space.
+Coding Pitfalls
+
+TRAP: putting nextLine() ahead of nextInt,nextDouble, nextLong and next()
+PITFALL: nextLine() is wasted by reading an empty file
+SOLUTION: add a throwaway nextLine before the real nextLine
+
+
+Good coding habits
+Conventions
+class: CamelCase.
+variable: lowerCamelCase.
+
+Tips and tricks
+Terminal
+Use the up key to run previous terminal commands.
+Write clear to clear the terminal output.
+Press the tab key for auto-complete.
+
+Escape characters
+\n adds a new line of space.
+\t adds a new tab of space.
+
+Shortcut keys
+Use CMD/Ctrl+/ to comment a highlighted piece of code.
+In Visual Studio Code, use sysout as a shortcut to System.out.println()
+
